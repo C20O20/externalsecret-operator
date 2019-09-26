@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/ContainerSolutions/externalsecret-operator/pkg/controller/externalsecret"
+	"github.com/ContainerSolutions/externalsecret-operator/operator/controller/externalsecret"
 )
 
 func init() {

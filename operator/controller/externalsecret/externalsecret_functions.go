@@ -3,14 +3,14 @@ package externalsecret
 import (
 	"fmt"
 
-	externalsecretoperatorv1alpha1 "github.com/ContainerSolutions/externalsecret-operator/pkg/apis/externalsecretoperator/v1alpha1"
+	externalsecretoperatorv1alpha1 "github.com/ContainerSolutions/externalsecret-operator/operator/apis/externalsecretoperator/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
 	// Trigger secrets backend registration
-	_ "github.com/ContainerSolutions/externalsecret-operator/secrets"
-	"github.com/ContainerSolutions/externalsecret-operator/secrets/backend"
+	_ "github.com/ContainerSolutions/externalsecret-operator/backend/secrets"
+	"github.com/ContainerSolutions/externalsecret-operator/backend/secrets/backend"
 )
 
 func newSecretForCR(cr *externalsecretoperatorv1alpha1.ExternalSecret) (*corev1.Secret, error) {

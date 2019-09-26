@@ -10,9 +10,9 @@ import (
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
-	"github.com/ContainerSolutions/externalsecret-operator/pkg/apis"
-	"github.com/ContainerSolutions/externalsecret-operator/pkg/controller"
-	"github.com/ContainerSolutions/externalsecret-operator/secrets/backend"
+	"github.com/ContainerSolutions/externalsecret-operator/operator/apis"
+	"github.com/ContainerSolutions/externalsecret-operator/operator/controller"
+	"github.com/ContainerSolutions/externalsecret-operator/backend/secrets/backend"
 	"github.com/ContainerSolutions/externalsecret-operator/version"
 
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
